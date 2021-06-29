@@ -27,7 +27,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@master
         with:
-          node-version:14.x
+          node-version: 14.x
       - name: Intall dependencies
         run: yarn install
       
@@ -41,7 +41,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          
+
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
